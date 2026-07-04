@@ -29,7 +29,7 @@
 #include "btrtl.h"
 #include "btmtk.h"
 
-#define VERSION "0.8"
+#define VERSION "0.9"
 
 static bool disable_scofix;
 static bool force_scofix;
@@ -794,6 +794,8 @@ static const struct usb_device_id quirks_table[] = {
 	{ USB_DEVICE(0x2550, 0x8761), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
 	{ USB_DEVICE(0x0bda, 0x8771), .driver_info = BTUSB_REALTEK |
+						     BTUSB_WIDEBAND_SPEECH },
+	{ USB_DEVICE(0x2c4e, 0x0115), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
 	{ USB_DEVICE(0x6655, 0x8771), .driver_info = BTUSB_REALTEK |
 						     BTUSB_WIDEBAND_SPEECH },
